@@ -80,6 +80,7 @@ class User(db.Model):
         }
 
 
+#Favoritos#
 class Favorite_planets(db.Model):
     __tablename__ = 'favorite_planets'
     id = db.Column(db.Integer, primary_key=True)
@@ -120,3 +121,5 @@ class Favorite_characters(db.Model):
             "character_id": self.character_id,
             "character_name": self.character_name
         }
+
+    #-------------------------------------------
